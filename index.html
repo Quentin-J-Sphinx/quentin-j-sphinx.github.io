@@ -14,6 +14,7 @@
         <!--align fonctionne avec Chrome & Edge mais semble être déprécié par Firefox-->
         <!-- Utilisation de align en attendant le CSS -->
     <header align="middle">
+
         <nav id="top">
             |<a href="#top">Accueil</a> |
             <a href="#form">Mes Formations</a> |
@@ -22,76 +23,108 @@
             <a href="#pass">Mes Passions</a> |
             <a href="https://github.com/Quentin-J-Sphinx" target="_blank" rel="noopener noreferrer">Mon Github</a> |
         </nav><br>
+
         <img src="https://source.unsplash.com/random/150x150" alt="Photo d'identité">
+
         <hr size="1" width="300" color="gold">
+
         <h1 align="middle" color="orange">Quentin Janowszik</h1>
         <!--Rajout de align=middle dans h1 car sinon dans firefox H1 n'est pas aligné au milieu-->
+
         <address>
             <a href="mailto:mail@mail.com">monmail@mail.com</a><br>
             <a href="tel:+33601020304">06.01.02.03.04</a>
         </address>
+
         <hr size="1" width="300" color="gold">
+
     </header>
 
     <main>
 
         <section>
             <hr size="1">
-            <!--Utilisation de l'attribut style en attendant le CSS-->
-            <details style="background: #060464; border:2px solid #02021b; width:auto;">
-                <summary id="form" style="padding-left:48%">Formations</summary>
+
+            <article>
+                <!--Utilisation de l'attribut style en attendant le CSS-->
+                <details style="background: #060464; border:2px solid #02021b; width:auto;">
+                    <summary id="form" style="padding-left:48%">Formations</summary>
+
+                        <ul style="padding-left:45%">
+                            <li><p>Formation <strong>O'Clock</strong> de développeur web en accessibilité numérique en cours <br>
+                                <label for="status">Avancement de la formation :</label>
+                                <progress id="status" max="100" value="10"> 10% </progress></p></li>
+                                <li><p>Site O'dopte moi</p></li>
+                        </ul>
+
+                </details>
+            </article>
+
+            <hr size="1">
+        </section>
+
+        <section>
+            <article>
+                <details style="background: #ac4103; border: 2px solid #e66465; width:auto">
+                    <summary id="exp" style="padding-left:48%">Expériences</summary>
+
                     <ul style="padding-left:45%">
-                        <li><p>Formation <strong>O'Clock</strong> de développeur web en accessibilité numérique en cours <br>
-                            <label for="status">Avancement de la formation :</label>
-                            <progress id="status" max="100" value="10"> 10% </progress></p></li>
-                            <li><p>Site O'dopte moi</p></li>
+                        <li><p><time datetime="2022-12-01">1er Decembre 2022 : </time>Site <a href="./site-odoptemoi/index.html" target="_blank" rel="noreferrer noopener">O'dopte moi</a></p></li>
                     </ul>
-            </details>
+
+                </details>
+            </article>
+
             <hr size="1">
         </section>
 
         <section>
-            <details style="background: #ac4103; border: 2px solid #e66465; width:auto">
-                <summary id="exp" style="padding-left:48%">Expériences</summary>
-                <ul style="padding-left:45%">
-                    <li><p><time datetime="2022-12-01">1er Decembre 2022 : </time>Site <a href="./site-odoptemoi/index.html" target="_blank" rel="noreferrer noopener">O'dopte moi</a></p></li>
-                </ul>
-            </details>
+            
+            <article>
+                <details style="background: #022b09; border: 2px solid #038029; width:auto;">
+                    <summary id="skills" style="padding-left:48%">Compétences</summary>
+
+                    <ul style="padding-left:45%">
+                        <li>Github : <progress id="status" max="100" value="85">85%</progress></li>
+                        <li><abbr title="HyperText Markup Language">HTML</abbr> : <progress id="status" max="100" value="75">75%</progress></li>
+                        <li><abbr title="Cascading Style Sheets">CSS</abbr> : <progress id="status" max="100" value="0">0%</progress></li>
+                        <li>JavaScript : <progress id="status" max="100" value="0">0%</progress></li>
+                        <li>Python : <progress id="status" max="100" value="5">5%</progress></li>
+                    </ul>
+
+                </details>
+            </article>
+
             <hr size="1">
         </section>
 
         <section>
-            <details style="background: #022b09; border: 2px solid #038029; width:auto;">
-                <summary id="skills" style="padding-left:48%">Compétences</summary>
-                <ul style="padding-left:45%">
-                    <li>Github : <progress id="status" max="100" value="85">85%</progress></li>
-                    <li><abbr title="HyperText Markup Language">HTML</abbr> : <progress id="status" max="100" value="75">75%</progress></li>
-                    <li><abbr title="Cascading Style Sheets">CSS</abbr> : <progress id="status" max="100" value="0">0%</progress></li>
-                    <li>JavaScript : <progress id="status" max="100" value="0">0%</progress></li>
-                    <li>Python : <progress id="status" max="100" value="5">5%</progress></li>
-                </ul>
-            </details>
-            <hr size="1">
-        </section>
 
-        <section>
-            <details style="background: #530305; border: 2px solid #e66465; width:auto;">
-                <summary id="pass" style="padding-left:48%">Passions</summary>
-                <ul style="padding-left:45%">
-                    <li><p>Coder</p></li>
-                    <li><p>Maquettes</p></li>
-                    <li><p>Guitare</p></li>
-                </ul>
-            </details>
+            <article>
+                <details style="background: #530305; border: 2px solid #e66465; width:auto;">
+                    <summary id="pass" style="padding-left:48%">Passions</summary>
+
+                    <ul style="padding-left:45%">
+                        <li><p>Coder</p></li>
+                        <li><p>Maquettes</p></li>
+                        <li><p>Guitare</p></li>
+                    </ul>
+
+                </details>
+            </article>
+
             <hr size="1">
         </section>
 
     </main>
 
     <footer align="middle">
+
         <img src="https://readme-typing-svg.herokuapp.com?font=Roboto&weight=20&size=20&duration=2500&pause=3000&color=8444F7&vCenter=true&width=65&lines=%23Promo" alt="Promo">
-        <img src="https://readme-typing-svg.herokuapp.com?font=Roboto&weight=20&size=20&duration=2500&pause=3000&color=EEF753&vCenter=true&width=70&lines=Sphinx" alt="Sphinx"><br>
+        <img src="https://readme-typing-svg.herokuapp.com?font=Roboto&weight=20&size=20&duration=2500&pause=3000&color=EEF753&vCenter=true&width=70&lines=Sphinx" alt="Sphinx">
+        <br>
         <a href="#top">Revenir en haut de la page</a>
+
     </footer>
 
     <marquee scrollamount="50" scrolldelay="5">
