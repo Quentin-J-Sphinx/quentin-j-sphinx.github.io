@@ -10,6 +10,8 @@
 
 <body>
     <header>
+        <!--align fonctionne avec Chrome & Edge mais semble être déprécié par Firefox-->
+        <!-- Utilisation de align en attendant le CSS -->
         <nav align="middle">
             <a href="">Accueil</a> |
             <a href="">Contact</a> |
@@ -23,20 +25,26 @@
 
         <section align="middle">
 
-            <hr color="cyan" size="1">
-            <details close align="left">
-                <summary color="cyan" border="2px">Expériences</summary>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus enim dolores sit quibusdam magnam, quia ea ut doloremque amet voluptates voluptatem itaque, fuga laudantium commodi rem sapiente sint. At, sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia omnis cumque harum explicabo provident est. Sapiente vero doloremque nihil vitae delectus? Molestias quisquam atque porro aliquam laudantium, et eveniet iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odio aliquam voluptates quia numquam laboriosam optio voluptas. Quod aperiam vero ratione quos asperiores impedit, eveniet, labore quisquam minima magni ipsum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed dolor in nihil expedita sapiente odit placeat veniam neque, numquam magni impedit voluptas. Assumenda, mollitia odio. Iste minus est ad voluptatem!</p>
+            <hr size="1" width="100" align="left">
+            <!--Utilisation de l'attribut style en attendant le CSS-->
+            <details style="background: #060464; border:2px solid #02021b; width:fit-content">
+                <summary>Formations</summary>
+                    <ul>
+                        <li><p>Formation <strong>O'Clock</strong> de développeur web en accessibilité numérique en cours <br>
+                            <label for="status">Avancement de la formation :</label>
+                            <progress id="status" max="100" value="10"> 10% </progress></p></li>
+                    </ul>
             </details>
-            <hr color="cyan" size="1">
+            <hr size="1" width="100" align="left">
 
         </section>
 
-        <section>
-            <details close bgcolor="blue">
-                <summary bgcolor="pink">Passions</summary>
+        <section align="middle">
+            <details style="background: #530305; border: 2px solid #e66465; width:fit-content">
+                <summary align="left">Passions</summary>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis quos nam iste, exercitationem aspernatur deserunt eius! Cum reiciendis eaque corporis blanditiis dicta rerum illo ipsa laboriosam, ullam ducimus consectetur laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit atque provident aliquid porro dolorem minima perspiciatis veniam iusto dolores fugiat enim veritatis vitae, repudiandae quibusdam, officiis, odit nostrum magnam ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa laborum laboriosam, quis temporibus numquam nemo, nesciunt cupiditate quasi sint commodi delectus accusamus. Nulla quaerat quae suscipit deleniti autem blanditiis.</p>
             </details>
+            <hr size="1" width="100" align="left">
         </section>
 
     </main>
